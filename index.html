@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Solar Dashboard</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <header>☀️ Smart Solar Tracking Dashboard</header>
+
+  <!-- Summary Section -->
+  <div class="grid">
+    <div class="card">
+      <h2>Solar Power</h2>
+      <p id="solarPower">0 kW</p>
+    </div>
+    <div class="card">
+      <h2>Battery Status</h2>
+      <p id="battery">65%</p>
+    </div>
+    <div class="card">
+      <h2>Energy Consumed</h2>
+      <p id="consumed">0 kWh</p>
+    </div>
+  </div>
+
+  <!-- Device Controls -->
+  <h2 class="section-title">Device Controls</h2>
+  <div class="controls">
+    <button id="lightBtn">💡 Lights ON</button>
+    <button id="fridgeBtn">🧊 Fridge ON</button>
+    <button id="fanBtn">🌀 Fan ON</button>
+    <button id="chargeBtn">🔋 Stop Charging</button>
+  </div>
+
+  <!-- Chart Section -->
+  <div class="chart-container">
+    <canvas id="usageChart"></canvas>
+  </div>
+
+  <!-- Logs Section -->
+  <h2 class="section-title">Event Logs</h2>
+  <div class="logs-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Time</th>
+          <th>Event</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="logs">
+        <!-- Logs will appear here -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #101820;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding: 1rem;
+  background: #1f2937;
+  font-size: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.card {
+  background: #1e3a5f;
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.section-title {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button.off {
+  background: #ef4444;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.chart-container {
+  padding: 1rem;
+}
+
+canvas {
+  background: #0f172a;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+/* Logs Table */
+.logs-container {
+  padding: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #1e3a5f;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 0.8rem;
+  text-align: center;
+  border-bottom: 1px solid #334155;
+}
+
+th {
+  background: #2563eb;
+}
+
+tr:hover {
+  background: #334155;
+}
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .controls {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  header {
+    font-size: 1.2rem;
+  }
+  
+  button {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .controls {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  header {
+    font-size: 1.2rem;
+  }
+  
+  button {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+}
+/* Responsive Design */
+@media (max-width: 768px) { 
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .controls {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    }
+@media (max-width: 480px) {
+    header {
+        font-size: 1.2rem;
+    }
+    
+    button {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+}
