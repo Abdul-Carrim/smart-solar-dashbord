@@ -1,9 +1,9 @@
-// Fake data simulation (replace later with ESP32/Firebase data)
+// placeholder readings for solar, battery and power consumed by componets
 let solarPower = 120;
 let battery = 65;
 let consumed = 50;
 
-// Update values dynamically
+
 function updateDashboard() {
   document.getElementById("solarPower").innerText = solarPower + " kW";
   document.getElementById("battery").innerText = battery + "%";
@@ -178,4 +178,5 @@ if (battery < 5) {
 }
 if (battery > 95) {
   addLog("Status", "Battery Fully Charged");
+
 }
